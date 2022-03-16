@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Abbreviation -->
+    <abbr title="HyperText Markup Language">HTML</abbr> was created in 1993.
+    <hr />
+
+    <!-- List of options -->
+    <input list="list" />
+    <datalist id="list">
+      <option value="Front-end"></option>
+      <option value="Back-end"></option>
+      <option value="Full-stack"></option>
+    </datalist>
+
+    <hr />
+    <!-- Meter -->
+    <meter value="0" max="100" low="10" high="60">Course Progress</meter><br />
+    <meter value="20" max="100" low="40" high="60">Course Progress</meter><br />
+    <meter value="80" max="100" low="10" high="60">Course Progress</meter><br />
+    <meter value="100" max="100">Course Progress</meter>
+    <hr />
+    <progress value="30" max="100"></progress>
+    <hr />
+    <!-- Marked text -->
+    <mark>Marked</mark>
+    <h2>To know HTML <mark>semantic</mark> is important</h2>
+    <hr />
+    <script>
+      const drawingCanvas = document.getElementById("example");
+      if (drawingCanvas && drawingCanvas.getContext) {
+        const context = drawingCanvas.getContext("2d");
+        context.fillStyle = "#000";
+        context.beginPath();
+        context.arc(100, 100, 100, 0, Math.PI * 2, true);
+        context.closePath();
+        context.stroke();
+        context.fill();
+      }
+    </script>
+  </body>
+</html>
